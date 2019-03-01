@@ -1,0 +1,7 @@
+{"namespace": "com.pp.frenchfries.QRCode.model",
+ "type": "record",
+ "name": "QRCode",
+ "fields": [
+     {"name": "qrCode", "type": "string"}
+ ]
+}
