@@ -15,12 +15,12 @@ public class Sender {
     private String jsonTopic;
 
     @Autowired
-    private KafkaTemplate<String, QRCode> kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate;
 
     public void send(QRCode payload) {
         System.out.println(jsonTopic);
         LOGGER.info("sending payload='{}'", payload.toString());
-        kafkaTemplate.send(jsonTopic, payload.getQrCode().toString(), payload);
+        kafkaTemplate.send(jsonTopic, payload.getQrCode().toString(), payload.toString());
     }
 
 

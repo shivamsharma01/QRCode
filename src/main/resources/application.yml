@@ -2,10 +2,10 @@ spring:
     kafka:
       consumer:
         auto-offset-reset: latest
-      bootstrap-servers: localhost:29092,localhost:29093,localhost:29094
+      bootstrap-servers: kafka-611ec65-shivamsharma-33cd.aivencloud.com:23585
 kafka:
   topic:
-    qrcode: qrcode-dev-4
-  schema-registry-url: http://localhost:8081
+    qrcode: test
+  schema-registry-url: https://avnadmin:xcoo2fxjypf2ys4u@kafka-611ec65-shivamsharma-33cd.aivencloud.com:23588
 server:
   port: 8084

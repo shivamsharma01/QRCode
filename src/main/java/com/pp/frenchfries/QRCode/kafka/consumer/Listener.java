@@ -15,7 +15,7 @@ public class Listener {
     private static final Logger LOGGER = LoggerFactory.getLogger(Listener.class);
 
     @KafkaListener(topics = "${kafka.topic.qrcode}", groupId = "qr-group")
-    public void receive(@Payload QRCode data,
+    public void receive(@Payload String data,
                         @Headers MessageHeaders headers) {
         LOGGER.info("received data='{}'", data);
 
